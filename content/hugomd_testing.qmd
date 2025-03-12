@@ -1,7 +1,7 @@
 ---
-title: "testing equations in quarto `hugo-md` export"
+title: ""
 from: markdown+tex_math_single_backslash
-html-math-method: webtex
+html-math-method: mathjax
 format:
   hugo-md:
     toc: false
