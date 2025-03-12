@@ -10,17 +10,31 @@ output:
 ---
 
 
+# preparations
+
+I started this project with the steps described [in the quickstart guide](https://gohugo.io/getting-started/quick-start).
+
+    hugo new site quarto-hugomd-test
+    git init
+
+When cloning this repo, you will have to include a theme:
+
+    git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+    echo "theme = 'ananke'" >> hugo.toml
+
+(the `baseof.html` is taken from that theme)
+
 This file should be rendered with
 
     quarto render hugomd_testing.qmd --to hugo-md
 
-# Fourier Series Decomposition
+# dollar signs
 
 $$ c_{n} = \frac{1}{T}\sum\limits_{t=0}^{T} e^{-2\pi i n \frac{t}{T}} \cdot f(t) $$
 
 This is executed $\forall n>0$
 
-# ... and its inversion
+# brackets
 
 \[ f(t) = \sum\limits_{n=0}^{N} (2\cdot c_{n})\cdot e^{2\pi i n \frac{t}{T}} \]
 
