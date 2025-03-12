@@ -15,6 +15,8 @@ output:
 
 I am losing my $\sigma$!
 
+But I would like to keep \(\sigma\)...
+
 -   webtex works with inline `$` because it is included as webtex.
 -   mathjax cannot handle the inline dollar signs.
 -   gladtex, mathml... do not work
